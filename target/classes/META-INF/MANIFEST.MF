@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: suresh
+Build-Jdk: 11.0.3
+Implementation-Title: LOS
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: capital.clix
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/los
+Created-By: Maven Integration for Eclipse
+
