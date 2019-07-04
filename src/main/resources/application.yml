@@ -1,0 +1,32 @@
+server:
+  tomcat:
+    basedir: tomcat
+    accesslog:
+      enabled: true
+      pattern: '%t %a "%r" %s (%D ms)'
+  port: 8082
+environment:  dev
+vault:
+  url:  ${vault_url:http://172.20.3.91:8200}
+  token:  ${vault_token:c6776a44-de74-d879-40d9-1d4545a20c8f}
+  folder: secret/los/
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect:  org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+logging:
+  level:
+    org:
+      springframework:
+        ws: TRACE
+scheduler:
+  cron: 0 30 6,8,10 * * ?
+  cron1: 0 30 02 * * ?
+  flag: true
+
+sentry.dsn: https://9fff5a93b29c455181c869726a860e0b@sentry.io/1458106
+
+  
+        
